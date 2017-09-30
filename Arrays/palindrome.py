@@ -12,10 +12,8 @@ class Solution(object):
         y=str(x)
         z= y[::-1]
         comp=cmp(z,str(x))
-        if comp == 1:
-            return False
-        else:
-            return True
+        return comp != 1
+            
         
         #solution2(using integer)
         a,z=0,x
@@ -24,10 +22,8 @@ class Solution(object):
             a=a*10+x%10
             x=x/10
         
-        if z == a:
-            return True
-        else:
-            return False
+        return z == a
+            
 
 
 
